@@ -1,0 +1,48 @@
+th = 1.6
+width = lambda/2
+top metal  - positive
+bottom - negative - ground plane
+f = 5Ghz
+lambda = 60
+l = 60
+l = n*lambda
+material = copper
+substrate = FR4 epoxy
+ground = rectangle sheet - thicknes 0.017mm
+metal thickness = 0.017mm
+l is same for all
+if sheet : { boundary = perfectly }
+
+
+2. create rectangle {width - metal's width }-> assighn excitation _. lumped port  new line , middle to the top
+
+radiation box - > rightclick, create open region , frequency - 4ghz
+assign radiation boundary
+
+analysis _> setup -> 5 GHZ
+passes = 10
+add sweep - 4 to 6 ghz
+sweep type = fast
+
+
+er = 4.4 -> dielectric constant
+h = 1.6mm
+f = 5ghz
+z0 = 50 ohms
+electrical length = 90 degree
+
+ws = 3.05mm
+l = 8.21 mm
+
+which box
+
+substrate = 0.017mm
+above - 0.16,
+metal strip - 0.017mm
+
+
+lab 4 instructions
+
+far field report -> radiation pattern
+
+theta should vary from -180 to 180 .... ps radiation pattern
